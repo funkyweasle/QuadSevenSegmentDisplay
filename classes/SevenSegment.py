@@ -30,10 +30,6 @@ class SevenSegmentDisplay:
       
         
         self.bus.write_byte_data(address, self.SAA1064_CONTROL_REG_ADDRESS, self.SAA1064_CONTROL_DEFAULT)
-    
-    def __repr__(self):
-        """return string representation"""
-        return "Display Address = 0x{:02x}, Display Map = {}".format(self.address, self.digit_map )
         
     # This function clears all the digits
     def clear_all_digits(self):
@@ -158,7 +154,6 @@ numbers = {
     'E': segments['a'] + segments['d'] + segments['e'] + segments['f'] + segments['g'],
     'F': segments['a'] + segments['d'] + segments['e'] + segments['f']+ segments['g'],
     'r': segments['e'] + segments['g'],	
-    '-': segments['g'],
-    '+': segments['g'] + segments['b']
+    '-': segments['g']
 }
 
