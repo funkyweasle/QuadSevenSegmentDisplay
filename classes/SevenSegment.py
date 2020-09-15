@@ -2,11 +2,11 @@ from __future__ import print_function
 import time
 import platform
 
-#if(platform.system() == 'Windows'):
-print ("Using stubbed I2C")
-import classes.smbus as smbus
-#else:
-#    import smbus
+if(platform.system() == 'Windows'):
+    print ("Using stubbed I2C")
+    import classes.smbus as smbus
+else:
+    import smbus
 
 
 
