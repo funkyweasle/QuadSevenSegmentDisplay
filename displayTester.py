@@ -72,10 +72,10 @@ display_group1.clear_all_digits()
 
 if (args.interactive):
     print ("interactive mode")
-    number = raw_input("Enter value:")
+    number = input("Enter value:")
     while (number != "99999"):
         display_group1.write_number(number)
-        number = raw_input("Enter value:")
+        number = input("Enter value:")
 else:
     countdown(int(terminalValue),args.countUp)
 exit()
