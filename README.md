@@ -1,5 +1,5 @@
 # QuadSevenSegmentDisplay
-Python and C++ based SAA1064 (4-digit LED-driver with I2C-Bus interface) Display Application
+Python based SAA1064 (4-digit LED-driver with I2C-Bus interface) Display Application
 
 -Unit tests-
 The unit tests provided by  unitTest_SevenSegment.py use the simulated smbus class which will work on Windows, but for Raspberry PI the unit test will try to use the real smbus module, which doesn't have special call to reset the simulator (see resetWriteFlag()). 
